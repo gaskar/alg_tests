@@ -83,6 +83,8 @@ var tree = new Tree(new Node(1, 2));
 var leftNode = tree.getRoot().addLeftNode(2, 4);
 var rightNode = tree.getRoot().addRightNode(3, 6);
 
-leftNode.addLeftNode(4, 20);
+leftNode
+	.addLeftNode(4, 20)
+	;
 
 tree.getNodes(tree.getRoot(), 0);
